@@ -12,7 +12,7 @@ import LibGenerateTestUserSig from './lib-generate-test-usersig-es.min';
  *
  */
 
-export const SDKAPPID = 0;
+export let SDKAPPID = 0;
 
 /**
  * Encryption key for calculating signature, which can be obtained in the following steps:
@@ -29,7 +29,7 @@ export const SDKAPPID = 0;
  * Document: https://intl.cloud.tencent.com/document/product/647/35166#Server
  *
  */
-export const SDKSECRETKEY = '';
+export let SDKSECRETKEY = '';
 
 /**
  * Signature expiration time, which should not be too short
@@ -37,7 +37,7 @@ export const SDKSECRETKEY = '';
  * Default time: 7 * 24 * 60 * 60 = 604800 = 7days
  *
  */
-export const EXPIRETIME = 604800;
+export let EXPIRETIME = 604800;
 
 /**
  * Set user information on the push side
@@ -53,8 +53,9 @@ export const userInfo = {
 };
 
 export function getBasicInfo() {
+  SDKAPPID = Number(sessionStorage.getItem('sdkAppId') || 0)
+  SDKSECRETKEY = sessionStorage.getItem('sdkSecretKey')
   if (SDKAPPID === Number(0) || SDKSECRETKEY === String('')) {
-    alert('Please configure your SDKAPPID in config/basic-info-config.js');
     return;
   }
   const generator = new LibGenerateTestUserSig(SDKAPPID, SDKSECRETKEY, EXPIRETIME);

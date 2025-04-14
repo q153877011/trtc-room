@@ -18,9 +18,7 @@ export function getUrlParam(key: string) {
  * @returns language
  */
 export function getLanguage() {
-  let language = getUrlParam('lang')
-    || localStorage.getItem('tuiRoom-language')
-    || navigator.language
+  let language = localStorage.getItem('tuiRoom-language')
     || 'en-US';
   language = language.replace(/_/, '-').toLowerCase();
   const isZh = language.startsWith('zh');
