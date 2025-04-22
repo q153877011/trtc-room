@@ -1,37 +1,19 @@
-# Quick Run of TUIRoomKit Web Demo
+# TRTC Call UIKit
 
-English | [简体中文](README.zh.md)
+This template is designed to help users quickly deploy and experience high-quality online meetings. In actual application scenarios, whether it is a friendly chat between friends thousands of miles apart, or private communication between business partners, using this template, you can easily initiate a video chat with others and enjoy a clear and smooth communication experience like face-to-face communication.
 
-This document describes how to quickly run the TUIRoomKit demo project to try out group audio/video interaction. If you need to integrate TUIRoomKit into your existing business, please refer to [TUIRoomKit Integration](https://trtc.io/document/54845?platform=web&product=conference).
+In addition, by reading this document, you will learn how to quickly run the TUIRoomKit sample project and perform secondary development. It only takes 5 minutes to successfully run the Demo and quickly build your own innovative applications such as stranger chat.
 
-> Notice：<br>
-> This example project integrates with the TUIRoomKit npm package [@tencentcloud/roomkit-web-vue3
-](https://www.npmjs.com/package/@tencentcloud/roomkit-web-vue3). This npm package provides a pre-conference preview component, an in-conference component, and methods for starting conference, joining conference, and fine-tuning the interface. For more, see [TUIRoomKit API](https://trtc.io/document/54880?platform=web&product=conference). If these APIs don't meet your business needs, you can refer to [TUIRoomKit source code export](https://trtc.io/document/54851?platform=web&product=conference#method-2.3A-modify-the-uikit-source-code) for accessing the TUIRoomKit source code.
+## Quick Deployment
+Using the EdgeOne page, you can achieve zero-code audio and video conference system setup through rapid template deployment.
 
-## Directory
+<a href="https://edgeone.ai/pages/new?from=github&amp;template=https://github.com/q153877011/trtc-room&amp;from=github" rel="nofollow"><img src="https://camo.githubusercontent.com/6a94a67f6a020d5810ef905549fc5255bf99ccd09f17881b6855b332b579a364/68747470733a2f2f63646e7374617469632e74656e63656e7463732e636f6d2f656467656f6e652f70616765732f6465706c6f792e737667" alt="Deploy with EdgeOne Pages" style="max-width: 100%;"></a>
 
-```
-.
-├── README.md
-├── README.zh.md
-├── index.html
-├── package.json
-├── public
-│   └── favicon.ico
-├── src
-│   ├── App.vue         -- Sample Project Main Page
-│   ├── config          -- User information configuration file and test userSig generation file
-│   ├── env.d.ts
-│   ├── locales         -- Local language, support English, Chinese
-│   ├── main.ts         -- Sample Project Entry File
-│   ├── router          -- Sample Project Routing Configuration
-│   ├── utils
-│   └── views           -- Sample project pages (including pre-conference preview pages and in-conference page)
-├── tsconfig.json
-├── tsconfig.node.json
-├── useRoomExtension.js
-└── vite.config.ts
-```
+You can click the "View Demo" button on the left to experience the online demonstration.
+
+Please note that the deployment template is based on secondary development of the original repository code, mainly for experiencing quick deployment features and online Demo. If you need to develop more extensive features, we recommend using the original repository code for in-depth development. Original development repository address: [https://github.com/Tencent-RTC/TUICallKit/tree/main/Web/basic-vue3](https://github.com/Tencent-RTC/TUIRoomKit/tree/main/Web/example/vite-vue3-ts)
+
+The following tutorial will provide detailed guidance on how to quickly run and experience the Demo.
 
 ### Step 1. Create a TRTC application
 1. Enter the [Application Management](https://www.tencentcloud.com/account/login) interface of the Tencent Cloud Live Audio/Video Console, select Create Application, enter the application name,click **Create Application**.
@@ -106,17 +88,3 @@ Open `http://localhost:3000/#/home` in a browser to try out TUIRoomKit.
 >! Production environments require the use of https domains
 
 <img src="https://qcloudimg.tencent-cloud.cn/raw/3af0ebbc654340a27ed4a2780f64e510.png" width="100%"/>
-
-## FAQs
-
-### I deployed the demo project in the testing/development environment. The mic and camera did not work. What should I do?
-
-Make sure you used an HTTPS URL. For the sake of data security and privacy protection, your browser may restrict HTTP URLs. To access all features of the TRTC web SDK (WebRTC), please use an HTTPS URL.
-
-
-## Other
-
-- Welcome to join our Telegram Group to communicate with our professional engineers! We are more than happy to hear from you~
-Click to join: [https://t.me/+EPk6TMZEZMM5OGY1](https://t.me/+EPk6TMZEZMM5OGY1)   
-Or scan the QR code   
-  <img src="https://qcloudimg.tencent-cloud.cn/raw/79cbfd13877704ff6e17f30de09002dd.jpg" width="300px">
