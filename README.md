@@ -1,4 +1,4 @@
-# TRTC Call UIKit
+# TRTC Conference UIKit
 
 This template is designed to help users quickly deploy and experience high-quality online meetings. In actual application scenarios, whether it is a friendly chat between friends thousands of miles apart, or private communication between business partners, using this template, you can easily initiate a video chat with others and enjoy a clear and smooth communication experience like face-to-face communication.
 
@@ -11,7 +11,7 @@ Using the EdgeOne page, you can achieve zero-code audio and video conference sys
 
 You can click the "View Demo" button on the left to experience the online demonstration.
 
-Please note that the deployment template is based on secondary development of the original repository code, mainly for experiencing quick deployment features and online Demo. If you need to develop more extensive features, we recommend using the original repository code for in-depth development. Original development repository address: [https://github.com/Tencent-RTC/TUICallKit/tree/main/Web/basic-vue3](https://github.com/Tencent-RTC/TUIRoomKit/tree/main/Web/example/vite-vue3-ts)
+Please note that the deployment template is based on secondary development of the original repository code, mainly for experiencing quick deployment features and online Demo. If you need to develop more extensive features, we recommend using the original repository code for in-depth development. Original development repository address: [https://github.com/Tencent-RTC/TUIRoomKit/tree/main/Web/example/vite-vue3-ts](https://github.com/Tencent-RTC/TUIRoomKit/tree/main/Web/example/vite-vue3-ts)
 
 The following tutorial will provide detailed guidance on how to quickly run and experience the Demo.
 
