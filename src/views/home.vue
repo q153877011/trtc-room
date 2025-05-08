@@ -14,16 +14,16 @@
     cancelBtn="cancel"
     confirmBtn="confirm"
   >
-    <div class="title">sdkAppId:</div>
+    <div class="title">SDKAppId:</div>
     <t-input 
       v-model="sdkAppId" lable="test"
-      placeholder="Please enter the sdkAppId"
+      placeholder="Please enter the SDKAppId"
     />
 
-    <div class="title">skdSecretKey</div>
+    <div class="title">SDKSecretKey</div>
     <t-input 
       v-model="skdSecretKey"
-      placeholder="Please enter the skdSecretKey"
+      placeholder="Please enter the SDKSecretKey"
     />
 
     <t-alert theme="warning" class="warning">
